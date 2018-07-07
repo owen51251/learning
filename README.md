@@ -1,4 +1,5 @@
 # learning 這是我學習經驗中遇到的小問題
+### markdown 語法： https://github.com/emn178/markdown
 
 ## LINUX篇
 
