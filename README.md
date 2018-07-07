@@ -8,17 +8,35 @@
 
 3.ifconfig eth0 192.168.133.150 netmask 255.255.255.0(更改網卡設定)
 
-4.adduser test (root)   deluser(刪除使用者)  grep ID /etc/passwd  /etc/shadow /etc/group  addgroup delgroup gpasswd -a(加入)-d（刪除）帳號　群組       
-setfacl -m u:tetst:rwx acl_test1 (acl設定)  getfacl filename (查看acl設定) 
-chage [-ldEImMW] 帳號名
-選項與參數：
--l ：列出該帳號的詳細密碼參數；
--d ：後面接日期，修改 shadow 第三欄位(最近一次更改密碼的日期)，格式 YYYY-MM-DD
--E ：後面接日期，修改 shadow 第八欄位(帳號失效日)，格式 YYYY-MM-DD
--I ：後面接天數，修改 shadow 第七欄位(密碼失效日期)
--m ：後面接天數，修改 shadow 第四欄位(密碼最短保留天數)
--M ：後面接天數，修改 shadow 第五欄位(密碼多久需要進行變更)
--W ：後面接天數，修改 shadow 第六欄位(密碼過期前警告日期)
+4.adduser test (root)
+
+  deluser(刪除使用者)  
+  
+  grep ID /etc/passwd  /etc/shadow /etc/group  
+  
+  addgroup delgroup gpasswd -a(加入) -d（刪除）帳號　群組
+
+  setfacl -m u:tetst:rwx acl_test1 (acl設定)  
+  
+  getfacl filename (查看acl設定) 
+
+  chage [-ldEImMW] 帳號名
+
+  選項與參數：
+  
+  -l ：列出該帳號的詳細密碼參數
+  
+  -d ：後面接日期，修改 shadow 第三欄位(最近一次更改密碼的日期)，格式 YYYY-MM-DD
+  
+  -E ：後面接日期，修改 shadow 第八欄位(帳號失效日)，格式 YYYY-MM-DD
+  
+  -I ：後面接天數，修改 shadow 第七欄位(密碼失效日期)
+  
+  -m ：後面接天數，修改 shadow 第四欄位(密碼最短保留天數)
+  
+  -M ：後面接天數，修改 shadow 第五欄位(密碼多久需要進行變更)
+  
+  -W ：後面接天數，修改 shadow 第六欄位(密碼過期前警告日期)
 
 
 
